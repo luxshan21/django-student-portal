@@ -1,5 +1,7 @@
 # Django Student Portal
 
+![Untitledvideo-MadewithClipchamp-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/af358e4a-25c6-49b8-9c95-6aa326417477)
+
 This is a simple Django-based CRUD (Create, Read, Update, Delete) operation system for managing student records. The portal allows users to register new students, view registered students, update student details, and delete student records.
 
 ## Features
@@ -66,10 +68,6 @@ This is a simple Django-based CRUD (Create, Read, Update, Delete) operation syst
     ```
 
 9. Open your browser and go to `http://127.0.0.1:8000/` to access the student portal.
-
-## Demo
-![Untitledvideo-MadewithClipchamp-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/af358e4a-25c6-49b8-9c95-6aa326417477)
-
 
 ## License
 This project is open-source and available under the [MIT License](LICENSE).
