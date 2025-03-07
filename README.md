@@ -67,7 +67,8 @@ This is a simple Django-based CRUD (Create, Read, Update, Delete) operation syst
 
 9. Open your browser and go to `http://127.0.0.1:8000/` to access the student portal.
 
-## Screenshots
+## Demo
+![Untitledvideo-MadewithClipchamp-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/af358e4a-25c6-49b8-9c95-6aa326417477)
 
 
 ## License
