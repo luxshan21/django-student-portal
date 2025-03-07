@@ -1,0 +1,87 @@
+/* General body and layout styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fc;
+    color: #333;
+    height: 100vh; /* Ensure body takes up full viewport height */
+    display: flex;
+    flex-direction: column; /* Stack header and content vertically */
+    text-align: center;
+    background-image: url("{% static 'images/front.jpg' %}"); /* Background image */
+    background-size: cover; /* Ensure the image covers the full background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent repeating the background image */
+}
+
+/* Header Styling (fixed at top) */
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark header for contrast */
+    color: white;
+    padding: 20px 0; /* Padding for spacing */
+    width: 100%;
+    position: fixed; /* Fix header at the top */
+    top: 0;
+    left: 0;
+    z-index: 1; /* Ensure header stays on top */
+}
+
+/* Styling the Header Text */
+h1 {
+    margin: 0;
+    font-size: 2.5rem; /* Adjusted font size */
+    font-weight: 600;
+}
+
+/* Main Content Styling */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%; /* Ensure it takes full height */
+    padding-top: 80px; /* Ensure content doesn't hide behind the fixed header */
+}
+
+/* Content Box Styling */
+.content {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Links Styling as Buttons */
+a {
+    display: inline-block;
+    background-color: #4CAF50; /* Green background for button */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button Hover Effect */
+a:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+/* General paragraph styling */
+p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Additional spacing between elements */
+.content p {
+    margin-bottom: 15px;
+}

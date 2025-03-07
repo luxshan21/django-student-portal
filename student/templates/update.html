@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Student Details</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("{% static 'images/front.jpg' %}"); /* Background image */
+            background-size: cover; /* Ensure the image covers the entire screen */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Prevent repeating the image */
+            padding: 20px;
+            color: white; /* Ensure the text is readable on top of the background */
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #fff; /* Make heading white for contrast */
+        }
+
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .btn-submit {
+            width: 100%;
+        }
+
+        /* Ensuring form text is black and readable */
+        .form-group input {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Update Student Details</h1>
+
+<div class="form-container">
+    <form action="{% url 'update_student' student.id %}" method="POST">
+        {% csrf_token %}
+        
+        <div class="form-group">
+            <label for="id">Student ID</label>
+            <input type="text" class="form-control" id="id" name="id" value="{{ student.id }}" disabled>
+        </div>
+
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" value="{{ student.name }}" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" value="{{ student.email }}" required>
+        </div>
+
+        <div class="form-group">
+            <label for="contact_no">Contact Number</label>
+            <input type="text" class="form-control" id="contact_no" name="contact_no" value="{{ student.contact_no }}" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-submit">Update Student</button>
+    </form>
+</div>
+
+</body>
+</html>
