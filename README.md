@@ -1,6 +1,6 @@
 # Django Student Portal
 
-![Untitledvideo-MadewithClipchamp-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/af358e4a-25c6-49b8-9c95-6aa326417477)
+![Untitled video - Made with Clipchamp (1)](https://github.com/user-attachments/assets/1f5a3a96-2e65-459a-b9e0-49de9e9a4afc)
 
 This is a simple Django-based CRUD (Create, Read, Update, Delete) operation system for managing student records. The portal allows users to register new students, view registered students, update student details, and delete student records.
 
@@ -13,8 +13,7 @@ This is a simple Django-based CRUD (Create, Read, Update, Delete) operation syst
 ## Technologies Used
 - **Django**: Web framework for building the application.
 - **HTML/CSS**: Frontend for styling and user interaction.
-- **SQLite**: Default database used by Django (you can switch to others like MySQL if needed). I did in MySQL
-
+- **MySQL**: MySQL database used by Django (you can switch to others like Postgresql if needed). 
 ## Requirements
 - Python 3.x
 - Django 3.x or above
